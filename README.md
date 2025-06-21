@@ -44,6 +44,7 @@ The repository is organized as follows:
     * Conducted visual analysis to understand relationships between features and churn.
     * Generated various plots (e.g., bar charts, box plots) to highlight churn patterns across `Contract Type`, `Tenure_Group`, `InternetService`, `MonthlyCharges`, and `PaymentMethod`.
     * **Example EDA Plot:**
+    * 
         ![Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
       
 4.  **Basic Machine Learning Model (Logistic Regression):**
@@ -60,8 +61,7 @@ The repository is organized as follows:
     * Designed an interactive dashboard with key performance indicators (KPIs) and charts.
     * Included scorecard for overall churn rate, bar charts for churn by demographics and service types, and filter controls for dynamic analysis.
     * **Interactive Dashboard Link:** [View Live Dashboard](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF)
-    * **Dashboard Screenshot:**
-        ![Looker Studio Dashboard Overview](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/dashboard_overview.png)
+
 
 ## Key Findings & Business Insights
 
