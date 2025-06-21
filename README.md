@@ -57,7 +57,7 @@ The repository is organized as follows:
     * Connected Looker Studio to the Google Sheet as the data source.
     * Designed an interactive dashboard with key performance indicators (KPIs) and charts.
     * Included scorecard for overall churn rate, bar charts for churn by demographics and service types, and filter controls for dynamic analysis.
-    * **Interactive Dashboard Link:** [View Live Dashboard]([YOUR_LOOKER_STUDIO_REPORT_LINK](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF))
+    * **Interactive Dashboard Link:** [View Live Dashboard](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF)
     * **Dashboard Screenshot:**
         ![Looker Studio Dashboard Overview](screenshots/looker_studio_dashboard.png) *(Replace with your actual screenshot name)*
 
