@@ -44,7 +44,7 @@ The repository is organized as follows:
     * Conducted visual analysis to understand relationships between features and churn.
     * Generated various plots (e.g., bar charts, box plots) to highlight churn patterns across `Contract Type`, `Tenure_Group`, `InternetService`, `MonthlyCharges`, and `PaymentMethod`.
     * **Example EDA Plot:**
-    * 
+      
         ![Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
       
 4.  **Basic Machine Learning Model (Logistic Regression):**
@@ -72,8 +72,6 @@ Based on the analysis, the following key insights were identified:
 * **Internet Service:** Customers with `Fiber optic` internet service churn at a much higher rate than those with `DSL` or no internet service. This suggests potential issues with fiber optic service quality or perceived value.
 * **Monthly Charges:** Churned customers tend to have higher average `MonthlyCharges`, indicating that price perception or value for money could be a factor.
 * **Payment Method:** `Electronic check` is associated with a particularly high churn rate, suggesting friction or dissatisfaction with this payment method.
-* **Senior Citizens:** (Add insight about SeniorCitizen based on your EDA, if any, or remove if not significant).
-* **Model Insights (from Logistic Regression coefficients):** (Summarize 2-3 most influential features from your model's coefficients output in Cell 6. For example: "The model identified `Contract_Month-to-month` and `InternetService_Fiber optic` as strong positive predictors of churn, while `tenure` and `Contract_Two year` were strong negative predictors.")
 
 ## Future Enhancements
 
