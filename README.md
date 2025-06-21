@@ -1,6 +1,6 @@
 # Telco Customer Churn Analysis
 
-![Tech Stack]([images/example.png](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg))
+![Tech Stack](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg)
 
 ## Project Overview
 
