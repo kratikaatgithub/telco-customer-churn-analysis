@@ -73,12 +73,6 @@ Based on the analysis, the following key insights were identified:
 * **Monthly Charges:** Churned customers tend to have higher average `MonthlyCharges`, indicating that price perception or value for money could be a factor.
 * **Payment Method:** `Electronic check` is associated with a particularly high churn rate, suggesting friction or dissatisfaction with this payment method.
 
-## Future Enhancements
-
-* Explore more advanced machine learning models (e.g., Random Forest, Gradient Boosting) for improved churn prediction accuracy.
-* Perform deeper text analysis on customer feedback (if available) to understand qualitative reasons for churn.
-* Implement A/B testing for new retention strategies suggested by the insights.
-* Integrate real-time data sources for continuous monitoring of churn risk.
 
 ## Author
 
