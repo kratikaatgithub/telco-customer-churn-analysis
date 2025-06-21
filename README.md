@@ -1,7 +1,8 @@
 # Telco Customer Churn Analysis
 
-![Tech Stack](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg)
-
+<div align="center">
+  <img src="https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg">
+</div>
 ## Project Overview
 
 This project focuses on analyzing a comprehensive Telco Customer Churn dataset to identify key factors contributing to customer attrition. The primary goal is to leverage data processing, machine learning, and interactive visualization techniques to extract actionable insights that can help telecommunication companies reduce customer churn and improve retention strategies.
