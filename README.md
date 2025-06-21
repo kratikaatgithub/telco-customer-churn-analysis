@@ -1,8 +1,5 @@
 # Telco Customer Churn Analysis
 
-<div align="center">
-  <img src="https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg">
-</div>
 ## Project Overview
 
 This project focuses on analyzing a comprehensive Telco Customer Churn dataset to identify key factors contributing to customer attrition. The primary goal is to leverage data processing, machine learning, and interactive visualization techniques to extract actionable insights that can help telecommunication companies reduce customer churn and improve retention strategies.
@@ -14,6 +11,9 @@ This project focuses on analyzing a comprehensive Telco Customer Churn dataset t
 * **Google Sheets:** Intermediate data storage for connecting to Looker Studio.
 * **Google Looker Studio (formerly Data Studio):** For building interactive dashboards and visualizations.
 * **GitHub Pages:** For hosting the project portfolio and documentation.
+<div align="center">
+  <img src="https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg">
+</div>
 
 ## Project Structure
 
@@ -38,15 +38,14 @@ The repository is organized as follows:
         * `MonthlyCharges_Category`: Segmented monthly charges into 'Low', 'Medium', 'High', 'Very High'.
         * `Has_MultipleServices`: A binary indicator if a customer subscribes to both phone and internet (excluding no internet service).
     * **Data Retention:** Ensured `customerID` was retained in the final processed CSV for accurate counting and distinct customer identification in Looker Studio.
-    * **Python Notebook:** [Link to Telco_Churn_Analysis.ipynb](Telco_Churn_Analysis.ipynb)
+    * **Python Notebook:** [Link to Telco_Churn_Analysis.ipynb](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/Telco_Churn_Analysis.ipynb)
 
 3.  **Exploratory Data Analysis (EDA) & Visualization (using Python):**
     * Conducted visual analysis to understand relationships between features and churn.
     * Generated various plots (e.g., bar charts, box plots) to highlight churn patterns across `Contract Type`, `Tenure_Group`, `InternetService`, `MonthlyCharges`, and `PaymentMethod`.
     * **Example EDA Plot:**
-        ![Churn by Contract Type](screenshots/churn_by_contract_type.png) *(Replace with your actual screenshot name)*
-        *(Add another relevant plot screenshot here, e.g., Monthly Charges Distribution)*
-
+        ![Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
+      
 4.  **Basic Machine Learning Model (Logistic Regression):**
     * Converted the `Churn` target variable to numerical (No=0, Yes=1).
     * Applied one-hot encoding to handle categorical features, preparing data for the model.
@@ -62,7 +61,7 @@ The repository is organized as follows:
     * Included scorecard for overall churn rate, bar charts for churn by demographics and service types, and filter controls for dynamic analysis.
     * **Interactive Dashboard Link:** [View Live Dashboard](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF)
     * **Dashboard Screenshot:**
-        ![Looker Studio Dashboard Overview](screenshots/looker_studio_dashboard.png) *(Replace with your actual screenshot name)*
+        ![Looker Studio Dashboard Overview](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/dashboard_overview.png)
 
 ## Key Findings & Business Insights
 
@@ -85,7 +84,7 @@ Based on the analysis, the following key insights were identified:
 
 ## Author
 
-[YOUR NAME]
-[Optional: LinkedIn Profile Link]
-[Optional: Personal Website/Blog Link]
+[Kratika Garg]
+[LinkedIn Profile Link](https://www.linkedin.com/in/kratikagarg01/)]
+[Optional: Medium / Blog Link]
 
