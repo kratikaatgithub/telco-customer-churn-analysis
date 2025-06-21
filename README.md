@@ -78,5 +78,5 @@ Based on the analysis, the following key insights were identified:
 
 [Kratika Garg]
 [LinkedIn Profile Link](https://www.linkedin.com/in/kratikagarg01/)]
-[Optional: Medium / Blog Link]
+[Medium / Blog Link](https://medium.com/@kratikagarg99/from-raw-data-to-business-insight-my-first-data-analytics-project-on-telco-churn-a-beginners-30270b9c7e5f)
 
