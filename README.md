@@ -29,7 +29,7 @@ The repository is organized as follows:
 
 3.  **Exploratory Data Analysis (EDA):**
     * Visualized churn trends across features like Contract Type, Tenure, Internet Service, Monthly Charges, and Payment Method using bar charts and box plots.
-    [Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
+    ![Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
       
 4.  **Machine Learning Model (Logistic Regression):**
     * Encoded categorical variables and split data (80% train, 20% test).
