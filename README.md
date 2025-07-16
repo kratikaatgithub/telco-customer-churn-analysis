@@ -4,10 +4,7 @@
 This project analyzes a Telco Customer Churn dataset to identify key drivers behind customer attrition. Using data processing, machine learning, and visualization, the goal is to help telecom companies improve retention strategies.
 
 **Tools & Technologies Used:**
-* **Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn):** For data analysis and modeling.
-* **Google Sheets:** Intermediate data storage for connecting to Looker Studio.
-* **Google Looker Studio:** For building interactive dashboards.
-* **GitHub Pages:** For hosting the project portfolio and documentation.
+Python, Google Sheets, Google Looker Studio, Github Pages
 <div align="center">
   <img src="https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg">
 </div>
@@ -27,9 +24,7 @@ The repository is organized as follows:
     * Sourced dataset from Kaggle and reviewed data types.
 
 2.  **Data Processing & Feature Engineering (using Python in Google Colab):**
-    * Handled missing values.
-    * Standardized fields and unified ‘No service’ entries.
-    * Feature Creation: eg: Tenure_Group, MonthlyCharges_Category etc.
+    * Handled missing values, Standardized fields and unified ‘No service’ entries, Feature Creation:(Tenure_Group, MonthlyCharges_Category).
     * **Python Notebook:** [Link to Telco_Churn_Analysis.ipynb](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/Telco_Churn_Analysis.ipynb)
 
 3.  **Exploratory Data Analysis (EDA):**
@@ -43,8 +38,7 @@ The repository is organized as follows:
     * Analyzed feature coefficients to interpret churn drivers.
 
 5.  **Interactive Dashboard (Looker Studio):**
-    * Processed data uploaded to Google Sheets and connected to Looker Studio.
-    * Built dynamic dashboards with KPIs, churn breakdowns, and filter controls.
+    * Processed data uploaded to Google Sheets and connected to Looker Studio to build a dynamic dashboard.
     * **Interactive Dashboard Link:** [View Live Dashboard](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF)
 
 
