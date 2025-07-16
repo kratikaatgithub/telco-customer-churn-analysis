@@ -1,15 +1,12 @@
 # Telco Customer Churn Analysis
 
 ## Project Overview
-
-This project focuses on analyzing a comprehensive Telco Customer Churn dataset to identify key factors contributing to customer attrition. The primary goal is to leverage data processing, machine learning, and interactive visualization techniques to extract actionable insights that can help telecommunication companies reduce customer churn and improve retention strategies.
+This project analyzes a Telco Customer Churn dataset to identify key drivers behind customer attrition. Using data processing, machine learning, and visualization, the goal is to help telecom companies improve retention strategies.
 
 **Tools & Technologies Used:**
-* **Python:** Data cleaning, feature engineering, exploratory data analysis (EDA), and machine learning (Logistic Regression).
-* **Google Colaboratory:** Cloud-based Jupyter environment for Python development.
-* **Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn:** Core Python libraries for data manipulation, visualization, and modeling.
+* **Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn):** For data analysis and modeling.
 * **Google Sheets:** Intermediate data storage for connecting to Looker Studio.
-* **Google Looker Studio (formerly Data Studio):** For building interactive dashboards and visualizations.
+* **Google Looker Studio:** For building interactive dashboards.
 * **GitHub Pages:** For hosting the project portfolio and documentation.
 <div align="center">
   <img src="https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Tech%20Stack.jpg">
@@ -18,48 +15,36 @@ This project focuses on analyzing a comprehensive Telco Customer Churn dataset t
 ## Project Structure
 
 The repository is organized as follows:
-* `Telco_Churn_Analysis.ipynb`: The Google Colab notebook containing all Python code for data processing, EDA, and model building.
-* `WA_Fn-UseC_-Telco-Customer-Churn.csv`: The original raw dataset downloaded from Kaggle.
-* `telco_churn_processed_for_looker.csv`: The cleaned and feature-engineered dataset used for the Looker Studio dashboard.
-* `screenshots/`: A directory containing various screenshots of the Looker Studio dashboard and key Python outputs.
-* `index.html`: The main portfolio page hosted on GitHub Pages, linking to the dashboard and this repository.
+* `Telco_Churn_Analysis.ipynb`: Core Python notebook.
+* `WA_Fn-UseC_-Telco-Customer-Churn.csv`: Original dataset (from Kaggle).
+* `telco_churn_processed_for_looker.csv`:  Cleaned dataset for dashboard.
+* `screenshots/`:  Key visuals and outputs.
+* `index.html`: TMain project page hosted on GitHub Pages.
 
 ## Methodology and Key Steps
 
 1.  **Data Acquisition:**
-    * Obtained the Telco Customer Churn dataset from Kaggle.
-    * Initially reviewed the dataset structure and data types.
+    * Sourced dataset from Kaggle and reviewed data types.
 
 2.  **Data Processing & Feature Engineering (using Python in Google Colab):**
-    * **Handling Missing Values:** Converted 'TotalCharges' to numeric, replacing non-numeric (blanks) with 0, assuming these are new customers.
-    * **Standardization:** Transformed `SeniorCitizen` (0/1) to 'No'/'Yes' for better readability. Standardized 'No internet service' and 'No phone service' entries across related columns to 'No'.
-    * **Feature Creation:**
-        * `Tenure_Group`: Categorized customer tenure into distinct groups (e.g., '0-6 Months', '7-12 Months').
-        * `MonthlyCharges_Category`: Segmented monthly charges into 'Low', 'Medium', 'High', 'Very High'.
-        * `Has_MultipleServices`: A binary indicator if a customer subscribes to both phone and internet (excluding no internet service).
-    * **Data Retention:** Ensured `customerID` was retained in the final processed CSV for accurate counting and distinct customer identification in Looker Studio.
+    * Handled missing values.
+    * Standardized fields and unified ‘No service’ entries.
+    * Feature Creation: eg: Tenure_Group, MonthlyCharges_Category etc.
     * **Python Notebook:** [Link to Telco_Churn_Analysis.ipynb](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/Telco_Churn_Analysis.ipynb)
 
-3.  **Exploratory Data Analysis (EDA) & Visualization (using Python):**
-    * Conducted visual analysis to understand relationships between features and churn.
-    * Generated various plots (e.g., bar charts, box plots) to highlight churn patterns across `Contract Type`, `Tenure_Group`, `InternetService`, `MonthlyCharges`, and `PaymentMethod`.
-    * **Example EDA Plot:**
-      
+3.  **Exploratory Data Analysis (EDA):**
+    * Visualized churn trends across features like Contract Type, Tenure, Internet Service, Monthly Charges, and Payment Method using bar charts and box plots.
         ![Churn by Contract Type](https://github.com/kratikaatgithub/telco-customer-churn-analysis/blob/main/screenshot/Churn%20by%20Contract%20Type.jpg)
       
-4.  **Basic Machine Learning Model (Logistic Regression):**
-    * Converted the `Churn` target variable to numerical (No=0, Yes=1).
-    * Applied one-hot encoding to handle categorical features, preparing data for the model.
-    * Split data into training and testing sets (80% train, 20% test).
-    * Trained a Logistic Regression model to predict customer churn likelihood.
-    * Evaluated model performance using accuracy, classification report (precision, recall, f1-score), and confusion matrix.
-    * Analyzed model coefficients to identify features with the strongest impact on churn prediction.
+4.  **Machine Learning Model (Logistic Regression):**
+    * Encoded categorical variables and split data (80% train, 20% test).
+    * Trained Logistic Regression model to predict churn.
+    * Evaluated using accuracy, precision, recall, and confusion matrix.
+    * Analyzed feature coefficients to interpret churn drivers.
 
-5.  **Interactive Dashboard (using Google Looker Studio):**
-    * Uploaded the processed data (`telco_churn_processed_for_looker.csv`) to Google Sheets.
-    * Connected Looker Studio to the Google Sheet as the data source.
-    * Designed an interactive dashboard with key performance indicators (KPIs) and charts.
-    * Included scorecard for overall churn rate, bar charts for churn by demographics and service types, and filter controls for dynamic analysis.
+5.  **Interactive Dashboard (Looker Studio):**
+    * Processed data uploaded to Google Sheets and connected to Looker Studio.
+    * Built dynamic dashboards with KPIs, churn breakdowns, and filter controls.
     * **Interactive Dashboard Link:** [View Live Dashboard](https://lookerstudio.google.com/u/0/reporting/0b5cb7b1-dc0c-475a-b5ab-9f63e0048543/page/irqOF)
 
 
@@ -67,11 +52,11 @@ The repository is organized as follows:
 
 Based on the analysis, the following key insights were identified:
 
-* **Contract Type:** Customers on `Month-to-month` contracts show a significantly higher churn rate compared to those on `One year` or `Two year` contracts. This highlights the importance of encouraging longer-term commitments.
-* **Tenure:** New customers, especially those in the `0-6 Months` tenure group, have the highest propensity to churn. Retention efforts should be front-loaded.
-* **Internet Service:** Customers with `Fiber optic` internet service churn at a much higher rate than those with `DSL` or no internet service. This suggests potential issues with fiber optic service quality or perceived value.
-* **Monthly Charges:** Churned customers tend to have higher average `MonthlyCharges`, indicating that price perception or value for money could be a factor.
-* **Payment Method:** `Electronic check` is associated with a particularly high churn rate, suggesting friction or dissatisfaction with this payment method.
+* **Contract Type:** Month-to-month customers churn more—long-term plans improve retention.
+* **Tenure:** New customers (0-6 months) are most likely to churn—focus retention efforts early.
+* **Internet Service:** Fiber optic users churn more—potential service issues.
+* **Monthly Charges:** Higher charges correlate with higher churn—pricing strategy review suggested.
+* **Payment Method:** Electronic check users churn at higher rates.
 
 
 ## Author
